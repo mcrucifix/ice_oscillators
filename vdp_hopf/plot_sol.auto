@@ -1,0 +1,5 @@
+p = plot('B',type='solution',  solution_x='U(1)', solution_y='U(2)', label=[3,6],  color_list=('black  red red'), xlabel='X', ylabel='Y', width=300, height=400,  use_labels=False, grid=False,  smart_label=False, labels=(), stability=1, user_point_symbol=' ', bifurcation_symbol=' ', top_title='VDP', xlabel_fontsize=18, ylabel_fontsize=18, top_title_fontsize=22)
+p.savefig('vdp_sol.svg')
+
+p = plot('B',type='solution',  solution_x='t', solution_y='U(2)', label=[3,6],  color_list=('black  red red'), xlabel='X' , ylabel='Y', width=300, height=400,  use_labels=False, grid=False,  smart_label=False, labels=(), stability=1, user_point_symbol=' ', bifurcation_symbol=' ', top_title='VDP', xlabel_fontsize=18, ylabel_fontsize=18, top_title_fontsize=22)
+p.savefig('vdp_sol_t.svg')

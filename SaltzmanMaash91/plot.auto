@@ -1,0 +1,5 @@
+p = plot('sal90_3d',bifurcation_x='PAR(1)', bifurcation_y='MAX U(1)',  color_list=('black  red red'), xlabel='F_MU (TECTONIC CO2 FORCING)', ylabel='MAX I(t) / 10^15 kg', width=300, height=400,  use_labels=False, grid=False,  smart_label=False, labels=(), stability=1, user_point_symbol=' ', bifurcation_symbol=' ', top_title='SM91', xlabel_fontsize=18, ylabel_fontsize=18, top_title_fontsize=22, ymin=0, ymax=100, xmin=-0.002, xmax=0.002)
+p.savefig('vdp_s91_max.svg', transparent=True)
+
+p = plot('sal90_3d',bifurcation_x='PAR(1)', bifurcation_y='MIN U(1)',  color_list=('black  red red'), xlabel='F_MU (TECTONIC CO2 FORCING)', ylabel='MAX I(t) / 10^15 kg', width=300, height=400,  use_labels=False, grid=False,  smart_label=False, labels=(), stability=1, user_point_symbol=' ', bifurcation_symbol=' ', top_title='SM91', xlabel_fontsize=18, ylabel_fontsize=18, top_title_fontsize=22, xmin=-0.002, xmax=0.002, ymin=0, ymax=100)
+p.savefig('vdp_s91_min.svg', transparent=True)

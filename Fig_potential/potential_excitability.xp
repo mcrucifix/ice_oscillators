@@ -1,0 +1,28 @@
+
+#include "epix.h"
+using namespace ePiX;
+
+double f1(double x) { return (x*x*x*x/12. - x*x/2. -  2./3.*x) ;}
+double f2(double x) { return (x*x*x*x/12. - x*x/2.) ; }
+double f3(double x) { return (x*x*x*x/12. - x*x/2. + 2./3.*x) ; }
+double f4(double x) { return (x*x*x*x/12. - x*x/2. + 0.5*x) ; }
+
+
+
+
+
+int main()
+{
+  picture(P(-3,0), P(3,3), "0.5 x 0.60in");
+
+  begin();
+
+   spot(P(1.20, f4(1.20)+0.15));
+   bold();
+   plot(f4, -3, 3, 50);
+   plain();
+   // commands to draw in subfig 
+  pst_format();
+  end();
+}
+

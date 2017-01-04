@@ -1,0 +1,6 @@
+p = plot('B',bifurcation_x='PAR(1)', bifurcation_y='MIN U(1)',  color_list=('black  red '), xlabel='BETA', ylabel='MAX x(t)', height=400, width=300, use_labels=False, grid=False,  smart_label=False, labels=(), stability=1, user_point_symbol=' ', bifurcation_symbol=' ', top_title='VDP', xlabel_fontsize=18, ylabel_fontsize=18, top_title_fontsize=22, miny=-2.5, maxy=2.5)
+p.savefig('vdp_beta_min.svg')
+
+p = plot('B',bifurcation_x='PAR(1)', bifurcation_y='MAX U(1)',  color_list=('black  red '), xlabel='BETA', ylabel='MAX x(t)', height=400, width=300, use_labels=False, grid=False,  smart_label=False, labels=(), stability=1, user_point_symbol=' ', bifurcation_symbol=' ', top_title='VDP', xlabel_fontsize=18, ylabel_fontsize=18, top_title_fontsize=22, miny=-2.5, maxy=2.5)
+p.savefig('vdp_beta_max.svg')
+

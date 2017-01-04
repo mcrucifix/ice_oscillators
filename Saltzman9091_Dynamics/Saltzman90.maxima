@@ -1,0 +1,21 @@
+
+p : 1.0;
+q : 2.5;
+r : 0.9;
+v : 0.2;
+w : 0.5;
+s : 1.0;
+
+
+xp : -x - y - v*z ;
+yp : -p * z + r * y + s * z*z - w*y*z - y*z*z - 1.;
+zp : -q * (x + z);
+
+J : jacobian([xp,yp,zp], [x,y,z]);
+S : solve([xp,yp,zp], [x,y,z]);
+
+J00 : subst(S[3], J);
+ 
+eigenvalues(J00);
+
+

@@ -1,0 +1,8 @@
+A = run('vdp', ICP=1, DS=-0.05, UZR={1:[0.9,-1.2]}, STOP='UZ2', JAC=1)
+B = run(A('HB1'), IRS=2, IPS=2, ICP=[1,11], DS='-', UZR={1:[0.90]}, STOP='BP1', JAC=1, IPLT=-1)
+save(relabel(A+B),'B')
+C = run(B('UZ1'), IRS=2, IPS=2, ICP=[2,11], UZR={2:1.1}, STOP='UZ1', DS=+0.05, JAC=1, IPLT=-1)
+save(C,'C')
+
+#D = run(C('UZ1'), IRS=2, IPS=2, ICP=[1,11], UZR={1:0.999}, STOP='UZ1', DS='-', JAC=1, IPLT=-1)
+#save(D,'D')

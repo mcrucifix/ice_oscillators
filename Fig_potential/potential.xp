@@ -1,0 +1,75 @@
+
+#include "epix.h"
+using namespace ePiX;
+
+double f1(double x) { return (x*x*x*x/12. - x*x/2. -  2./3.*x) ;}
+double f2(double x) { return (x*x*x*x/12. - x*x/2.) ; }
+double f3(double x) { return (x*x*x*x/12. - x*x/2. + 2./3.*x) ; }
+
+
+
+
+
+int main()
+{
+  picture(P(0,0), P(6,1), "6 x 1in");
+
+  begin();
+
+   screen subfig(P(-4.0,0), P(4.0,4)); // [a1, a2] x [b1, b2]  
+   activate(subfig);	// open subfig for drawing  
+   spot(P(-1, f1(-1.)+0.15));
+   arrow(P(-0.6, f1(-0.6)+0.15), P(0., f1(0.)+0.25),  P(0.6, f1(0.6)+0.35), 0.4);
+   bold();
+   plot(f1, -2.8, 2.8, 50);
+   plain();
+   // commands to draw in subfig 
+   deactivate(subfig); // re-activate the previous screen
+
+   inset(subfig,  P(0,0), P(1,1));  
+
+   screen subfig2(P(-5.0,0), P(5.0,4)); // [a1, a2] x [b1, b2]  
+   activate(subfig2);	// open subfig for drawing  
+   spot(P(sqrt(3), f2(sqrt(3))+0.15));
+   bold();
+   plot(f2, -2.8, 2.8, 50);
+   plain();
+   // commands to draw in subfig 
+   deactivate(subfig2); // re-activate the previous screen
+
+   inset(subfig2,  P(1.2,0), P(2.2,1));  
+
+   screen subfig3(P(-5.0,0), P(5.0,4)); // [a1, a2] x [b1, b2]  
+   activate(subfig3);	// open subfig for drawing  
+   spot(P(1, f3(1.)+0.15));
+   arrow(P(0.6, f3(0.6)+0.15), P(0., f3(0.)+0.25),  P(-0.6, f3(-0.6)+0.35), 0.4);
+   bold();
+   plot(f3, -2.8, 2.8, 50);
+   plain();
+   // commands to draw in subfig 
+   deactivate(subfig3); // re-activate the previous screen
+
+   inset(subfig3,  P(2.4,0), P(3.4,1));  
+
+
+   screen subfig4(P(-5.0,0), P(5.0,4)); // [a1, a2] x [b1, b2]  
+   activate(subfig4);	// open subfig for drawing  
+   spot(P(-sqrt(3), f2(-sqrt(3))+0.15));
+   bold();
+   plot(f2, -2.8, 2.8, 50);
+   plain();
+   // commands to draw in subfig 
+   deactivate(subfig4); // re-activate the previous screen
+
+   inset(subfig4,  P(3.6,0), P(4.6,1));  
+
+   label(P(0.5,0.8), P(0.,0.), "${x=-2/3}$",  t);
+   label(P(1.7,0.8), P(0.,0.), "${x=0}$",  t);
+   label(P(2.9,0.8), P(0.,0.), "${x=2/3}$",  t);
+   label(P(4.1,0.8), P(0.,0.), "${x=0}$",  t);
+ 
+   arrow(P( -0.2, -0.7), P( 4.4, -0.7));
+  pst_format();
+  end();
+}
+

@@ -1,0 +1,3 @@
+A = run('sal3_forced', IRS=0, IPS=-2, ILP = 0, ICP = 14, UZR={14:200}, DS = 1, STOP='UZ1', JAC=0, NDIM=5)
+
+save(A, 'sal90_forced')

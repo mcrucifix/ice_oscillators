@@ -1,0 +1,32 @@
+
+p : 1.0;
+q : 2.5;
+r : 0.9;
+v : 0.2;
+w : 0.5;
+s : 1.0;
+
+
+xp : -x - y - v*z ;
+yp : -p * z + r * y + s * z*z - w*y*z - y*z*z;
+zp : -q * (x + z);
+
+xp : subst(solve(zp, z), xp);
+yp : subst(solve(zp, z), yp);
+
+
+
+load("implicit_plot");
+/*implicit_plot([xp, yp], [x,-3,3], [y,-3,3]);
+
+load("plotdf");
+plotdf([xp, yp], [x,-5,5], [y,-5,5]); */
+
+
+/* further variable change, to make the system look like xdot=-y ; ydot = ...
+*/
+cvar : solve(y2=-xp,y);
+
+x2p : subst(cvar, xp);
+y2p : diff(-xp, y)* subst(cvar,  yp) + diff(-xp, x) * x2p;
+implicit_plot(subst(y2=y, [x2p, y2p]), [x,-5,5], [y,-5,5]);

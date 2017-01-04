@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+    \usepackage{psfrag}
+    \usepackage{graphicx}
+    \usepackage[dvipsnames]{xcolor}
+    \pagestyle{empty}
+  
+    % You can run this by typing the following commands:
+    %    latex vdp.tex
+    %    dvips -o vdp.ps vdp.dvi
+  
+    \begin{document}
+  
+    % The syntax of the "psfrag" command is:
+    %    \psfrag{tag}[<posn>][<psposn>][<scale>][<rot>]{replacement}
+    % See the file pfgguide.ps for full documentation.
+  
+    \begin{figure}
+      \psfrag{X}[B][B][1][0]{$x$}
+      \psfrag{Y}[Bl][Bl][1][0]{$y$}
+      \psfrag{YBETA}[Bl][Bc][1][0]{\color{blue} $y=\beta$}
+      \psfrag{XPHI}[B][c][1][0]{\color{Mahogany} $x=y^3/3-y$}
+      \psfrag{YBETAFM}[B][c][1][0]{\color{blue} $F(t)$}
+      \includegraphics{vdp.eps}
+    \end{figure}
+  
+    \end{document}
+
+

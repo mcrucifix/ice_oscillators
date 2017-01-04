@@ -1,0 +1,49 @@
+phi(y) = (y)**3/3 - (y)
+phi1(y)[-2:-1] = (y)**3/3 - (y)
+phi2(y)[-1:1] = (y)**3/3 - (y)
+phi3(y)[1:2] = (y)**3/3 - (y)
+set isosam 21,21
+unset parametric
+set xrange [-1.5:1.5]
+set yrange [-2:2]
+set table "field2xy.tmp"
+splot x,y w l
+unset table
+
+coef=0.2
+beta=-0.7
+F=0.3
+dx1(x,y)=-(y+beta)
+dy1(x,y)=-(phi(y)-x)
+
+set samples 50
+#set label '$y=\phi(x)$' at 0.38,1.69 textcolor rgb "brown"
+#set label '$x=\beta$' at -0.76,0.38 textcolor rgb "blue"
+#set label '$x$' at 1.8,0.1
+#set label '$y$' at 0.1,2.
+set label 'XPHI' at 0.38,1.69 textcolor rgb "brown"
+set label 'YBETA' at -0.56,-beta+0.1 textcolor rgb "blue"
+set label 'YBETAFM' at 0.46,-beta+F/3 textcolor rgb "blue"
+set label 'X' at 1.4,0.1
+set label 'Y' at 0.1,2.
+arrow from 0,-2 to 0,2 lt rgb "black"
+arrow from -1.5,0 to 1.5,0 lt rgb "black"
+arrow from 0.4,-beta to 0.4,-beta+F lt  rgb "blue"
+arrow from 0.4,-beta to 0.4,-beta-F lt  rgb "blue"
+unset xzeroaxis
+unset yzeroaxis
+unset border
+unset xtics
+unset ytics
+unset border
+unset key
+set parametric
+set trange [-2:2]
+plot  "field2xy.tmp" u 1:2:(1./10*coef*dx1($1,$2)):(coef*dy1($1,$2)) w vec lt rgb "grey",  \
+       phi1(t),t lw 4 lt 1 lc rgb "brown", \
+       phi2(t),t lw 4 lt 2 lc rgb "brown", \
+       phi3(t),t lw 4 lt 1 lc rgb "brown", \
+       t,-beta lw 4  lt 1 lc rgb "blue", \
+       t,-beta+F lw 4  lt 2 lc rgb "blue", \
+       t,-beta-F lw 4  lt 2 lc rgb "blue"
+#      phi(-beta),-beta with points pt 6 ps 5 lc rgb "red"

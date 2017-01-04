@@ -1,0 +1,4 @@
+A = run('vdp', ICP=1, DS=-0.05)
+B = run(A('HB1'), IRS=2, IPS=2, ICP=[1,11], UZR={1:-0.5}, STOP='UZ1')
+C = run(B('UZ1'), IRS=2, IPS=2, ICP=[1,11], UZR={1:0.1}, STOP='UZ1', DS=-0.05)
+

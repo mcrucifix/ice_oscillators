@@ -1,0 +1,8 @@
+S = run('sal3', ICP=1, DS=-0.01, UZR={1:1.}, STOP='UZ1', JAC=0, NDIM=3)
+A = run(S, IRS=2, DS=-0.01, UZR={1:[-01.2, -30.]}, STOP='UZ2', JAC=0, NDIM=3)
+
+C1 = run(A('HB1'), IRS=2, IPS=2, ICP=[1,11], DS=-0.01, UZR={1:[-1.2]}, STOP='BP1', IPLT=-1)
+C2 = run(A('HB2'), IRS=2, IPS=2, ICP=[1,11], DS=-0.01, UZR={1:[-1.2]}, STOP='LP1', IPLT=-1)
+
+save(relabel(A+merge(C1+C2)), 'sal90_3d')
+save(relabel(C1+C2), 's90_3d_Hopf_only')

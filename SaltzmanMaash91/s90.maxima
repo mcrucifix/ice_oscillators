@@ -1,0 +1,22 @@
+        ALPHA1:1.673915E-2;
+        ALPHA2:9.523810E-3;
+        ALPHA3:1.E-4;
+        BETA1:5.118377E-1;
+        BETA2:6.258680E-3;
+        BETA3:2.639456E-5;
+        BETA4:3.628118E-8;
+        BETA5:5.833333E-3;
+        GAMMA1:1.851250E-3;
+        GAMMA2:1.125000E-5;
+        GAMMA3:2.5E-4;
+        CMU   :4.0E-3;
+        KTHETA:4.4444444E-2;
+
+        dx :  ALPHA1 - ALPHA2 * CMU * MU - ALPHA3*I - ALPHA2*KTHETA*  THETA ;
+        dy :   BETA1 - (BETA2 - BETA3*MU + BETA4*MU*MU)*MU - BETA5  * THETA -0.005 ;
+        dz :  GAMMA1 - GAMMA2 * I - GAMMA3 * THETA ;
+
+        solve([dx,dy,dz],[ I, MU, THETA]);
+
+
+ 
