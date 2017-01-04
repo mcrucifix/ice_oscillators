@@ -1,0 +1,59 @@
+### amene au regime de parametres standards
+### parametres : 
+### 1 :  D : valeur standard : 0.27
+### 2 :  DDELTA : valeur standard : 0.4
+### 3 :  zz : valeur standard : 0.8
+### 4 :  BB : valeur standard : 0.7
+### 5 :  GGAMMA : valeur standard : 0.5
+
+A1 = run('fort_pp04',    ICP=1, UZR={1:0.27}, DS=0.01, STOP='UZ1', JAC=0, NDIM=3, NPAR=7)
+A2 = run(A1('UZ1'), ICP=2,  UZR={2:0.4}, STOP='UZ1', JAC=0, NDIM=3, NPAR=7)
+A3 = run(A2('UZ1'), ICP=3,  UZR={3:0.8}, STOP='UZ1', JAC=0, NDIM=3, NPAR=7)
+A4 = run(A3('UZ1'), ICP=4,  UZR={4:0.7}, STOP='UZ1', JAC=0, NDIM=3, NPAR=7)
+A5 = run(A4('UZ1'), ICP=5,  UZR={5:0.5}, STOP='UZ1', JAC=0, NDIM=3, NPAR=7)
+
+## goes through a hopf bifurcation between a4 and a5
+
+AH5 = run(A5('HB1'), IPS=2, ICP=[5,11],  UZR={5:[0.2, 0.3, 0.4, 0.5]}, STOP='UZ4', JAC=0, NDIM=3, NPAR=7)
+## takes it back and show the solution 
+
+# now, tests the stability of the limit point throughout the shift parameter z 
+
+B1 = run(A5('UZ1'), ICP=3,  UZR={3:0.0}, DS = -0.001, STOP='UZ1', JAC=0, NDIM=3, NPAR=7)
+B2 = run(A5('UZ1'), ICP=3,  UZR={3:1.3}, DS = 0.001, STOP='UZ1', JAC=0, NDIM=3, NPAR=7)
+
+
+# now, tests the stability of the limit point throughout the shift parameter D
+
+C1 = run(A5('UZ1'), ICP=1,  UZR={1:-0.5}, DS = -0.001, STOP='UZ1', JAC=0, NDIM=3, NPAR=7)
+C2 = run(A5('UZ1'), ICP=1,  UZR={1:1.3}, DS = 0.001, STOP='UZ1', JAC=0, NDIM=3, NPAR=7)
+
+CC2HOPF = run(C2('HB1'), IRS=2, IPS=2, ICP=[1,11],  UZR={1:[-0.2, 0.4]}, DS = 0.005, STOP='BP1', JAC=0, NDIM=3, NPAR=7, IPLT=-1)
+# now, tests the stability of the limit point throughout the shift parameter DDELTA
+
+D1 = run(A5('UZ1'), ICP=2,  UZR={2:[-0.2]}, DS = -0.001, STOP='UZ1', JAC=0, NDIM=3, NPAR=7, IPLT=-1)
+D2 = run(A5('UZ1'), ICP=2,  UZR={2:[0.401,0.6]}, DS = 0.0005, STOP='UZ2', JAC=0, NDIM=3, NPAR=7, IPLT=-1)
+
+# calculates the limit cycle amplitude for the Hopf bifurcation point found
+
+DD2HOPF = run(D2('HB1'), IRS=2, IPS=2, ICP=[2,11],  UZR={2:[-0.2, 0.4]}, DS = 0.005, STOP='BP1', JAC=0, NDIM=3, NPAR=7, IPLT=-1)
+
+save(relabel(merge(D1+D2+DD2HOPF)), 'pp04_DDELTA')
+# and tests the sensitivity with respect to TAUA
+
+TH5 = run(AH5('UZ4'), IPS=2, ICP=[6,11],  UZR={6:[1.1, 1.0, 0.9, 0.8, 0.7, 0.6, 0.2]}, DS=-0.001, STOP='LP1', JAC=0, NDIM=3, NPAR=7)
+TH6 = run(AH5('UZ4'), IPS=2, ICP=[7,11],  UZR={7:[0.4,0.3,0.2, 0.15]}, DS=-0.01, STOP='UZ4', JAC=0, NDIM=3, NPAR=7)
+## he finds a hofp bifurcation on B2. Branches on it, and see how the limit cycle develops
+
+#C2 = run(B1('HB1'), IRS=2, IPS=2, ICP=[3,11],  UZR={3:[0.9, 1.0, 1.1, 1.2, 1.3]}, DS = 0.005, STOP='BP1', JAC=0, NDIM=3, NPAR=7)
+
+save(merge(relabel(A1+A2+A3+A4+A5)), 'pp04_spinup')
+save(merge(relabel(A5)), 'pp04_A5')
+save(merge(relabel(TH5)), 'pp04_AH5')
+save(merge(relabel(TH6)), 'pp04_AH6')
+
+save(merge(relabel(B1+B2)), 'pp04_zz')
+save(merge(relabel(C1+C2+CC2HOPF)), 'pp04_D')
+
+save(TH5, 'pp04_TH5')
+

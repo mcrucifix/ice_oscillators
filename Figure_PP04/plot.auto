@@ -1,0 +1,5 @@
+p = plot('pp04_DDELTA',bifurcation_x='PAR(2)', bifurcation_y='MAX U(1)',  color_list=('black  red red'), xlabel='F_MU (TECTONIC CO2 FORCING)', ylabel='MAX I(t) [arb. units]', width=300, height=400,  use_labels=False, grid=False,  smart_label=False, labels=(), stability=1, user_point_symbol=' ', bifurcation_symbol=' ', top_title='PP04', xlabel_fontsize=18, ylabel_fontsize=18, top_title_fontsize=22)
+p.savefig('pp04_max.svg')
+
+p = plot('pp04_DDELTA',bifurcation_x='PAR(2)', bifurcation_y='MIN U(1)',  color_list=('black  red red'), xlabel='F_MU (TECTONIC CO2 FORCING)', ylabel='MAX I(t) [arb. units]', width=300, height=400,  use_labels=False, grid=False,  smart_label=False, labels=(), stability=1, user_point_symbol=' ', bifurcation_symbol=' ', top_title='PP04', xlabel_fontsize=18, ylabel_fontsize=18, top_title_fontsize=22)
+p.savefig('pp04_min.svg')

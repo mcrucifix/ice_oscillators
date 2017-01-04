@@ -1,0 +1,527 @@
+
+ Starting direction of the free parameter(s) : 
+ PAR(  6) :  0.978940888624E+00
+ PAR( 11) :  0.543655484304E+01
+   6     1         Multipliers:     Stable:   3
+   6     1         Multiplier  1    9.87708E-01   0.00000E+00  Abs. Val.   9.87708E-01
+   6     1         Multiplier  2   -1.52969E-03   0.00000E+00  Abs. Val.   1.52969E-03
+   6     1         Multiplier  3    3.07676E-06   0.00000E+00  Abs. Val.   3.07676E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6    -1        0   1.20000E+00   8.11708E-01   6.83913E-01   6.74042E-01   6.31092E-01   1.30046E+01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6     2   0        1.19902E+00   8.11759E-01
+   6     2   1        1.19902E+00   8.11759E-01
+   6     2   2        1.19902E+00   8.11759E-01
+
+   6     2         Fold Function    9.78895E-01
+   6     2         BP   Function    4.66999E-01
+   6     2         Multipliers:     Stable:   3
+   6     2         Multiplier  1    9.89057E-01   0.00000E+00  Abs. Val.   9.89057E-01
+   6     2         Multiplier  2   -1.13565E-03   0.00000E+00  Abs. Val.   1.13565E-03
+   6     2         Multiplier  3    3.75661E-06   0.00000E+00  Abs. Val.   3.75661E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6    -2        0   1.19902E+00   8.11759E-01   6.83886E-01   6.74028E-01   6.30874E-01   1.29992E+01
+
+   6     2         Iterations   :   2
+   6     2         Next Step    :  -1.50000E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6     3   0        1.19755E+00   8.11836E-01
+   6     3   1        1.19755E+00   8.11837E-01
+   6     3   2        1.19755E+00   8.11837E-01
+
+   6     3         Fold Function    9.78825E-01
+   6     3         BP   Function    4.67113E-01
+   6     3         Multipliers:     Stable:   3
+   6     3         Multiplier  1    9.91077E-01   0.00000E+00  Abs. Val.   9.91077E-01
+   6     3         Multiplier  2   -5.37056E-04   0.00000E+00  Abs. Val.   5.37056E-04
+   6     3         Multiplier  3    6.65138E-06   0.00000E+00  Abs. Val.   6.65138E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6    -3        0   1.19755E+00   8.11837E-01   6.83845E-01   6.74007E-01   6.30545E-01   1.29910E+01
+
+   6     3         Iterations   :   2
+   6     3         Next Step    :  -2.25000E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6     4   0        1.19535E+00   8.11953E-01
+   6     4   1        1.19536E+00   8.11965E-01
+   6     4   2        1.19536E+00   8.11965E-01
+
+   6     4         Fold Function    9.78631E-01
+   6     4         BP   Function    4.70858E-01
+   6     4         Multipliers:     Stable:   3
+   6     4         Multiplier  1    1.00990E+00   0.00000E+00  Abs. Val.   1.00990E+00
+   6     4         Multiplier  2    5.66785E-03   0.00000E+00  Abs. Val.   5.66785E-03
+   6     4         Multiplier  3   -2.79224E-06   0.00000E+00  Abs. Val.   2.79224E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6    -4        0   1.19536E+00   8.11965E-01   6.83784E-01   6.73977E-01   6.30170E-01   1.29782E+01
+
+   6     4         Iterations   :   2
+   6     4         Next Step    :  -3.37500E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6     5   0        1.19207E+00   8.12157E-01
+   6     5   1        1.19205E+00   8.12141E-01
+   6     5   2        1.19205E+00   8.12141E-01
+
+   6     5         Fold Function    9.78514E-01
+   6     5         BP   Function    4.69876E-01
+   6     5         Multipliers:     Stable:   3
+   6     5         Multiplier  1    1.00919E+00   0.00000E+00  Abs. Val.   1.00919E+00
+   6     5         Multiplier  2    5.42442E-03   0.00000E+00  Abs. Val.   5.42442E-03
+   6     5         Multiplier  3   -2.60080E-06   0.00000E+00  Abs. Val.   2.60080E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6    -5        0   1.19205E+00   8.12141E-01   6.83692E-01   6.73929E-01   6.29399E-01   1.29597E+01
+
+   6     5         Iterations   :   2
+   6     5         Next Step    :  -5.06250E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6     6   0        1.18710E+00   8.12406E-01
+   6     6   1        1.18710E+00   8.12408E-01
+   6     6   2        1.18710E+00   8.12408E-01
+
+   6     6         Fold Function    9.78340E-01
+   6     6         BP   Function    4.68590E-01
+   6     6         Multipliers:     Stable:   3
+   6     6         Multiplier  1    1.00764E+00   0.00000E+00  Abs. Val.   1.00764E+00
+   6     6         Multiplier  2    4.88368E-03   0.00000E+00  Abs. Val.   4.88368E-03
+   6     6         Multiplier  3   -2.23339E-06   0.00000E+00  Abs. Val.   2.23339E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6    -6        0   1.18710E+00   8.12408E-01   6.83554E-01   6.73857E-01   6.28228E-01   1.29320E+01
+
+   6     6         Iterations   :   2
+   6     6         Next Step    :  -7.59375E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6     7   0        1.17967E+00   8.12810E-01
+   6     7   1        1.17967E+00   8.12809E-01
+   6     7   2        1.17967E+00   8.12809E-01
+
+   6     7         Fold Function    9.78061E-01
+   6     7         BP   Function    4.66121E-01
+   6     7         Multipliers:     Stable:   3
+   6     7         Multiplier  1    1.00458E+00   0.00000E+00  Abs. Val.   1.00458E+00
+   6     7         Multiplier  2    3.83767E-03   0.00000E+00  Abs. Val.   3.83767E-03
+   6     7         Multiplier  3   -1.45631E-06   0.00000E+00  Abs. Val.   1.45631E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6    -7        0   1.17967E+00   8.12809E-01   6.83333E-01   6.73748E-01   6.26408E-01   1.28905E+01
+
+   6     7         Iterations   :   2
+   6     7         Next Step    :  -1.13906E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6     8   0        1.16852E+00   8.13416E-01
+   6     8   1        1.16853E+00   8.13429E-01
+   6     8   2        1.16853E+00   8.13429E-01
+
+   6     8         Fold Function    9.77590E-01
+   6     8         BP   Function    4.64343E-01
+   6     8         Multipliers:     Stable:   3
+   6     8         Multiplier  1    1.00702E+00   0.00000E+00  Abs. Val.   1.00702E+00
+   6     8         Multiplier  2    4.71263E-03   0.00000E+00  Abs. Val.   4.71263E-03
+   6     8         Multiplier  3   -1.56812E-06   0.00000E+00  Abs. Val.   1.56812E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6    -8        0   1.16853E+00   8.13429E-01   6.83024E-01   6.73584E-01   6.23837E-01   1.28277E+01
+
+   6     8         Iterations   :   2
+   6     8         Next Step    :  -1.70859E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6     9   0        1.15183E+00   8.14372E-01
+   6     9   1        1.15184E+00   8.14388E-01
+   6     9   2        1.15184E+00   8.14388E-01
+
+   6     9         Fold Function    9.76873E-01
+   6     9         BP   Function    4.60842E-01
+   6     9         Multipliers:     Stable:   3
+   6     9         Multiplier  1    1.00729E+00   0.00000E+00  Abs. Val.   1.00729E+00
+   6     9         Multiplier  2    4.85734E-03   0.00000E+00  Abs. Val.   4.85734E-03
+   6     9         Multiplier  3   -1.09165E-06   0.00000E+00  Abs. Val.   1.09165E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6    -9        0   1.15184E+00   8.14388E-01   6.82560E-01   6.73338E-01   6.19821E-01   1.27327E+01
+
+   6     9         Iterations   :   2
+   6     9         Next Step    :  -2.56289E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    10   0        1.12679E+00   8.15855E-01
+   6    10   1        1.12681E+00   8.15891E-01
+   6    10   2        1.12681E+00   8.15891E-01
+
+   6    10         Fold Function    9.75684E-01
+   6    10         BP   Function    4.54960E-01
+   6    10         Multipliers:     Stable:   3
+   6    10         Multiplier  1    1.00655E+00   0.00000E+00  Abs. Val.   1.00655E+00
+   6    10         Multiplier  2    4.66876E-03   0.00000E+00  Abs. Val.   4.66876E-03
+   6    10         Multiplier  3   -3.70951E-07   0.00000E+00  Abs. Val.   3.70951E-07
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6   -10        0   1.12681E+00   8.15891E-01   6.81872E-01   6.72962E-01   6.13587E-01   1.25889E+01
+
+   6    10         Iterations   :   2
+   6    10         Next Step    :  -3.84434E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    11   0        1.08927E+00   8.18210E-01
+   6    11   1        1.08934E+00   8.18314E-01
+   6    11   2        1.08934E+00   8.18314E-01
+   6    11   3        1.08934E+00   8.18314E-01
+
+ ==> Location of special point :  Iteration   0  Step size =   1.09376E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    11   0        1.10000E+00   8.17616E-01
+   6    11   1        1.09999E+00   8.17604E-01
+   6    11   2        1.09999E+00   8.17604E-01
+
+ ==> Location of special point :  Convergence.   Step size =   8.51455E-06
+   6    11         Fold Function    9.74265E-01
+   6    11         BP   Function    4.36213E-01
+   6    11         Multipliers:     Stable:   3
+   6    11         Multiplier  1    1.00396E+00   0.00000E+00  Abs. Val.   1.00396E+00
+   6    11         Multiplier  2    3.85595E-03   0.00000E+00  Abs. Val.   3.85595E-03
+   6    11         Multiplier  3    4.99246E-07   0.00000E+00  Abs. Val.   4.99246E-07
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6   -11  UZ   12   1.09999E+00   8.17604E-01   6.81121E-01   6.72563E-01   6.06631E-01   1.24319E+01
+
+   6    11         Iterations   :   2
+   6    11         Next Step    :  -5.76650E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    12   0        1.04383E+00   8.21426E-01
+   6    12   1        1.04391E+00   8.21557E-01
+   6    12   2        1.04391E+00   8.21557E-01
+   6    12   3        1.04391E+00   8.21557E-01
+
+   6    12         Fold Function    9.70468E-01
+   6    12         BP   Function    4.33431E-01
+   6    12         Multipliers:     Stable:   3
+   6    12         Multiplier  1    9.95566E-01   0.00000E+00  Abs. Val.   9.95566E-01
+   6    12         Multiplier  2    1.35773E-03   0.00000E+00  Abs. Val.   1.35773E-03
+   6    12         Multiplier  3   -8.81690E-06   0.00000E+00  Abs. Val.   8.81690E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6   -12        0   1.04391E+00   8.21557E-01   6.79541E-01   6.71713E-01   5.91096E-01   1.20938E+01
+
+   6    12         Iterations   :   3
+   6    12         Next Step    :  -5.76650E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    13   0        9.87829E-01   8.25709E-01
+   6    13   1        9.88088E-01   8.26120E-01
+   6    13   2        9.88088E-01   8.26121E-01
+   6    13   3        9.88088E-01   8.26121E-01
+
+ ==> Location of special point :  Iteration   0  Step size =   1.23052E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    13   0        9.99997E-01   8.25128E-01
+   6    13   1        9.99969E-01   8.25088E-01
+   6    13   2        9.99969E-01   8.25088E-01
+
+ ==> Location of special point :  Iteration   1  Step size =   3.20850E-05
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    13   0        1.00000E+00   8.25085E-01
+   6    13   1        1.00000E+00   8.25085E-01
+   6    13   2        1.00000E+00   8.25085E-01
+
+ ==> Location of special point :  Convergence.   Step size =   1.94325E-10
+   6    13         Fold Function    9.66186E-01
+   6    13         BP   Function    4.01556E-01
+   6    13         Multipliers:     Stable:   3
+   6    13         Multiplier  1    9.98229E-01   0.00000E+00  Abs. Val.   9.98229E-01
+   6    13         Multiplier  2    2.56095E-03   0.00000E+00  Abs. Val.   2.56095E-03
+   6    13         Multiplier  3   -4.93680E-06   0.00000E+00  Abs. Val.   4.93680E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6   -13  UZ   13   1.00000E+00   8.25085E-01   6.78295E-01   6.71026E-01   5.77604E-01   1.18168E+01
+
+   6    13         Iterations   :   2
+   6    13         Next Step    :  -8.64976E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    14   0        9.16427E-01   8.32492E-01
+   6    14   1        9.16945E-01   8.33247E-01
+   6    14   2        9.16948E-01   8.33249E-01
+   6    14   3        9.16948E-01   8.33249E-01
+
+   6    14         Fold Function    9.51064E-01
+   6    14         BP   Function    3.91914E-01
+   6    14         Multipliers:     Stable:   3
+   6    14         Multiplier  1    9.99439E-01   0.00000E+00  Abs. Val.   9.99439E-01
+   6    14         Multiplier  2    4.49370E-03   0.00000E+00  Abs. Val.   4.49370E-03
+   6    14         Multiplier  3   -2.66580E-06   0.00000E+00  Abs. Val.   2.66580E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6   -14        0   9.16948E-01   8.33249E-01   6.75956E-01   6.69715E-01   5.47151E-01   1.12467E+01
+
+   6    14         Iterations   :   3
+   6    14         Next Step    :  -8.64976E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    15   0        8.33921E-01   8.42031E-01
+   6    15   1        8.35993E-01   8.44913E-01
+   6    15   2        8.36038E-01   8.44968E-01
+   6    15   3        8.36038E-01   8.44968E-01
+   6    15   4        8.36038E-01   8.44968E-01
+
+ ==> Location of special point :  Iteration   0  Step size =   6.83794E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    15   0        8.99733E-01   8.35656E-01
+   6    15   1        8.99399E-01   8.35339E-01
+   6    15   2        8.99399E-01   8.35339E-01
+   6    15   3        8.99399E-01   8.35339E-01
+
+ ==> Location of special point :  Iteration   1  Step size =   6.25699E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    15   0        8.99979E-01   8.35254E-01
+   6    15   1        8.99992E-01   8.35266E-01
+   6    15   2        8.99992E-01   8.35266E-01
+
+ ==> Location of special point :  Convergence.   Step size =   8.77916E-06
+   6    15         Fold Function    9.45444E-01
+   6    15         BP   Function    3.54641E-01
+   6    15         Multipliers:     Stable:   3
+   6    15         Multiplier  1    9.99482E-01   0.00000E+00  Abs. Val.   9.99482E-01
+   6    15         Multiplier  2    5.14699E-03   0.00000E+00  Abs. Val.   5.14699E-03
+   6    15         Multiplier  3   -2.82378E-06   0.00000E+00  Abs. Val.   2.82378E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6   -15  UZ   14   8.99992E-01   8.35266E-01   6.75480E-01   6.69441E-01   5.39690E-01   1.11185E+01
+
+   6    15         Iterations   :   2
+   6    15         Next Step    :  -1.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    16   0        8.05458E-01   8.47525E-01
+   6    16   1        8.08516E-01   8.51160E-01
+   6    16   2        8.08611E-01   8.51265E-01
+   6    16   3        8.08611E-01   8.51265E-01
+   6    16   4        8.08611E-01   8.51265E-01
+
+   6    16         Fold Function    8.22274E-01
+   6    16         BP   Function    3.45530E-01
+   6    16         Multipliers:     Stable:   3
+   6    16         Multiplier  1    1.00047E+00   0.00000E+00  Abs. Val.   1.00047E+00
+   6    16         Multiplier  2    2.28245E-02   0.00000E+00  Abs. Val.   2.28245E-02
+   6    16         Multiplier  3    1.05080E-06   0.00000E+00  Abs. Val.   1.05080E-06
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6   -16        0   8.08611E-01   8.51265E-01   6.72888E-01   6.67938E-01   4.77668E-01   1.02206E+01
+
+   6    16         Iterations   :   4
+   6    16         Next Step    :  -1.00000E-01
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    17   0        7.17683E-01   8.68894E-01
+   6    17   1        7.48028E-01   9.00477E-01
+   6    17   2        7.62622E-01   9.16119E-01
+   6    17   3        7.32510E-01   8.86000E-01
+   6    17   4        6.72514E-01   8.37286E-01
+   6    17   5       -6.72259E-01   2.90103E+00
+
+   6    16         Iterations   :   5
+   6    16         Next Step    :  -5.00000E-02
+   6    16 NOTE:Retrying step
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    17   0        7.63147E-01   8.59873E-01
+   6    17   1        7.71816E-01   8.68103E-01
+   6    17   2        7.72425E-01   8.68679E-01
+   6    17   3        7.72435E-01   8.68689E-01
+   6    17   4        7.72435E-01   8.68689E-01
+
+ ==> Location of special point :  Iteration   0  Step size =   3.80986E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    17   0        7.97526E-01   8.56430E-01
+   6    17   1        7.95120E-01   8.55577E-01
+   6    17   2        7.95139E-01   8.55584E-01
+   6    17   3        7.95139E-01   8.55584E-01
+
+ ==> Location of special point :  Iteration   1  Step size =   4.61254E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    17   0        7.97879E-01   8.54064E-01
+   6    17   1        7.98713E-01   8.54310E-01
+   6    17   2        7.98715E-01   8.54310E-01
+   6    17   3        7.98715E-01   8.54310E-01
+
+ ==> Location of special point :  Iteration   2  Step size =   1.21188E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    17   0        7.99631E-01   8.53985E-01
+   6    17   1        7.99651E-01   8.53995E-01
+   6    17   2        7.99651E-01   8.53995E-01
+
+ ==> Location of special point :  Iteration   3  Step size =   3.77427E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    17   0        7.99942E-01   8.53896E-01
+   6    17   1        7.99944E-01   8.53897E-01
+   6    17   2        7.99944E-01   8.53897E-01
+
+ ==> Location of special point :  Iteration   4  Step size =   6.78848E-05
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    17   0        7.99996E-01   8.53880E-01
+   6    17   1        7.99996E-01   8.53880E-01
+   6    17   2        7.99996E-01   8.53880E-01
+
+ ==> Location of special point :  Convergence.   Step size =   4.61684E-06
+   6    17         Fold Function    7.77127E-01
+   6    17         BP   Function    3.00327E-01
+   6    17         Multipliers:     Stable:   3
+   6    17         Multiplier  1    1.00048E+00   0.00000E+00  Abs. Val.   1.00048E+00
+   6    17         Multiplier  2    3.09371E-02   0.00000E+00  Abs. Val.   3.09371E-02
+   6    17         Multiplier  3    7.65761E-07   0.00000E+00  Abs. Val.   7.65761E-07
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6   -17  UZ   15   7.99996E-01   8.53880E-01   6.72637E-01   6.67786E-01   4.66780E-01   1.00861E+01
+
+   6    17         Iterations   :   2
+   6    17         Next Step    :  -7.50000E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    18   0        7.41724E-01   8.74257E-01
+   6    18   1        7.59816E-01   8.84486E-01
+   6    18   2        7.63174E-01   8.86409E-01
+   6    18   3        7.63410E-01   8.86546E-01
+   6    18   4        7.63411E-01   8.86547E-01
+   6    18   5        7.63411E-01   8.86547E-01
+
+   6    18         Fold Function    5.35789E-02
+   6    18         BP   Function    2.98865E-01
+   6    18         Multipliers:     Stable:   3
+   6    18         Multiplier  1    1.00096E+00   0.00000E+00  Abs. Val.   1.00096E+00
+   6    18         Multiplier  2    8.49374E-01   0.00000E+00  Abs. Val.   8.49374E-01
+   6    18         Multiplier  3   -6.66533E-09   0.00000E+00  Abs. Val.   6.66533E-09
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6   -18        0   7.63411E-01   8.86547E-01   6.71279E-01   6.66934E-01   3.23353E-01   8.37930E+00
+
+   6    18         Iterations   :   5
+   6    18         Next Step    :  -3.75000E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    19   0        7.46819E-01   9.02981E-01
+   6    19   1        7.65910E-01   9.07300E-01
+   6    19   2        7.73480E-01   9.09097E-01
+   6    19   3        7.74288E-01   9.09287E-01
+   6    19   4        7.74295E-01   9.09289E-01
+   6    19   5        7.74295E-01   9.09289E-01
+
+   6    18         Iterations   :   5
+   6    18         Next Step    :  -1.87500E-02
+   6    18 NOTE:Retrying step
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    19   0        7.55115E-01   8.94644E-01
+   6    19   1        7.63535E-01   8.96537E-01
+   6    19   2        7.64566E-01   8.96779E-01
+   6    19   3        7.64574E-01   8.96781E-01
+   6    19   4        7.64574E-01   8.96781E-01
+
+   6    19         Fold Function   -1.68021E-01
+ ==> Location of special point :  Iteration   0  Step size =   1.42166E-02
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    19   0        7.63807E-01   8.89985E-01
+   6    19   1        7.63292E-01   8.90015E-01
+   6    19   2        7.63293E-01   8.90015E-01
+   6    19   3        7.63293E-01   8.90015E-01
+
+   6    19         Fold Function   -1.75828E-02
+ ==> Location of special point :  Iteration   1  Step size =   1.18925E-03
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    19   0        7.63185E-01   8.89457E-01
+   6    19   1        7.63278E-01   8.89450E-01
+   6    19   2        7.63278E-01   8.89450E-01
+
+   6    19         Fold Function   -6.39836E-03
+ ==> Location of special point :  Iteration   2  Step size =   5.07885E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    19   0        7.63272E-01   8.89210E-01
+   6    19   1        7.63276E-01   8.89210E-01
+   6    19   2        7.63276E-01   8.89210E-01
+
+   6    19         Fold Function   -1.69044E-03
+ ==> Location of special point :  Iteration   3  Step size =   1.49872E-04
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    19   0        7.63276E-01   8.89139E-01
+   6    19   1        7.63276E-01   8.89139E-01
+   6    19   2        7.63276E-01   8.89139E-01
+
+   6    19         Fold Function   -3.07112E-04
+ ==> Location of special point :  Iteration   4  Step size =   3.09574E-05
+===============================================
+
+  BR    PT  IT         PAR           L2-NORM
+   6    19   0        7.63276E-01   8.89124E-01
+   6    19   1        7.63276E-01   8.89124E-01
+
+   6    19         Fold Function   -2.14699E-05
+ ==> Location of special point :  Convergence.   Step size =   2.29317E-06
+   6    19         BP   Function    2.22602E-01
+   6    19         Multipliers:     Stable:   2
+   6    19         Multiplier  1    1.00000E+00   0.00000E+00  Abs. Val.   1.00000E+00
+   6    19         Multiplier  2    1.00006E+00   0.00000E+00  Abs. Val.   1.00006E+00
+   6    19         Multiplier  3   -2.07650E-11   0.00000E+00  Abs. Val.   2.07650E-11
+
+  BR    PT  TY  LAB    PAR(6)        L2-NORM       MAX U(1)      MAX U(2)      MAX U(3)       PERIOD    
+  -6   -19  LP   16   7.63276E-01   8.89124E-01   6.71194E-01   6.66889E-01   3.11972E-01   8.23774E+00
+===============================================
+
+ Total Time    0.829E-01
